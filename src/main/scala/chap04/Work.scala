@@ -81,21 +81,6 @@ object Work extends App {
 
   checkY(100)
 
-  object AA
-  class BB
-
-  val a = AA
-
-  for {
-    x <- Seq(AA, 1, new BB)
-  } {
-   x match {
-     case AA => println("Type AA")
-     case _: BB => println(s"Type BB : ${x}")
-     case _ => println("Not found")
-   }
-  }
-
   ////////////////////////////////////////////////////////////////////////////////////
   // #4.3 시퀀스에 일치시키기
   ////////////////////////////////////////////////////////////////////////////////////
@@ -104,6 +89,8 @@ object Work extends App {
   val bb = "tail"
 
   println( aa +: bb )
+
+//  println( aa :: bb )
 
   val tt = Seq(1,2,3,4,5)
   val tt_head = tt.head

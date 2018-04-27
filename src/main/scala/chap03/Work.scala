@@ -182,6 +182,7 @@ object Work extends App {
   println(throwException)
 
   // http://knight76.tistory.com/entry/scala-trycatchTrymatchEither
+  // https://www.programcreek.com/scala/scala.util.Try
 
   ////////////////////////////////////////////////////////////////////////////////////
   // #6 call-by-name / call-by-value
