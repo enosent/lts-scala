@@ -160,36 +160,6 @@ object WorkPart1 extends App{
   }
 
 
-  {
-
-//    import scala.util.parsing.json.JSONObject
-    import org.json4s.jackson.Serialization._
-
-    implicit val formats = org.json4s.DefaultFormats
-
-    object JsonParserTest {
-      implicit class jsonForStringContext(val sc: StringContext) {
-        def jsonParser(values: Any*): String = {
-          val keyRE = """^[\s{,]*(\S+):\s*""".r
-          val keys = sc.parts map {
-            case keyRE(key) => key
-            case str => str
-          }
-          val kvs = keys zip values
-          write(kvs.toMap)
-        }
-      }
-    }
-
-    import JsonParserTest._
-
-    val name = "Dean Wampler"
-    val book = "Programming Scala, Second Edition"
-    val jsonobj = jsonParser"{name: $name, book: $book}"
-
-    println(jsonobj)
-  }
-
   ////////////////////////////////////////////////////////////////////////////////////
   // #5.2.6 오류 메시지 개선하기
   ////////////////////////////////////////////////////////////////////////////////////

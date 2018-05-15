@@ -1,4 +1,4 @@
-package chap05.sample
+package chap05.decompile
 
 object DecompileTest extends App {
 

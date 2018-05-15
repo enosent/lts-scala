@@ -1,4 +1,6 @@
-package chap05
+package chap05.`implicit`
+
+import chap05.javadb
 
 object implicits {
   import javadb.JRow

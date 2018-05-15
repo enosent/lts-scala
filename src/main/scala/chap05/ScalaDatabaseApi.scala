@@ -2,7 +2,7 @@ package chap05
 
 object ScalaDatabaseApi extends App {
 
-  import implicits._
+  import chap05.`implicit`.implicits._
 
   val row = javadb.JRow("one" -> 1, "two" -> 2.2, "three" -> "THREE!")
 

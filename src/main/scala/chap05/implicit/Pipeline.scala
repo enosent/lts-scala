@@ -1,4 +1,4 @@
-package chap05
+package chap05.`implicit`
 
 import scala.language.implicitConversions
 

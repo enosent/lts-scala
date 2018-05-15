@@ -1,9 +1,9 @@
 package chap05
 
 
-object CalculatePayroll2 {
+object CalculatePayrollSimple {
   def main(args: Array[String]) = {
-    import Pipeline._
+    import chap05.`implicit`.Pipeline._
     import Payroll._
 
     val e = Employee("Buck Trends", 100000.0F, 0.25F, 200F, 0.10F, 0.05F)

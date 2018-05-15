@@ -1,4 +1,4 @@
-package chap05.sample
+package chap05.decompile
 
 object WrapperInner {
   implicit def imp(paramX: Int): OuterClass = new OuterClass(paramX) // 아우터 클래스는 부분 함수로 만들어 사용해야 한다.

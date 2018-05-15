@@ -1,4 +1,4 @@
-package chap05.sample
+package chap05.decompile
 
 class OuterClass(paramX: Int) {
   println(s"OuterClass - $this")
