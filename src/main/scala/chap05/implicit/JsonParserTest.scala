@@ -5,7 +5,8 @@ import org.json4s.jackson.Serialization._
 
 object JsonParserTest {
 
-  implicit val formats = org.json4s.DefaultFormats
+
+
 
   implicit class jsonForStringContext(val sc: StringContext) {
     def jsonParser(values: Any*): String = {
@@ -15,7 +16,11 @@ object JsonParserTest {
         case str => str
       }
       val kvs = keys zip values
+
+      implicit val ff = org.json4s.DefaultFormats
       write(kvs.toMap)
     }
   }
+
+
 }

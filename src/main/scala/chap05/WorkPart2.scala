@@ -1,6 +1,6 @@
 package chap05
 
-
+import chap05.config.Pp._
 
 object WorkPart2 extends App {
 
@@ -20,9 +20,11 @@ object WorkPart2 extends App {
       def m(s: String) = m1(s)
     }
 
-//    implicit def overridingConversion(s: String): Foo = Foo(s"Boo: ${s}")
+
 
     new O().m("hello")
+
+    implicit def overridingConversion(s: String): Foo = Foo(s"Boo: ${s}")
   }
 
 
@@ -73,5 +75,10 @@ object WorkPart2 extends App {
     println(a.toJSON())
     println()
     println(p.toJSON())
+
+    1 → 2
   }
+
+  println(1 ♡ 2)
+
 }
